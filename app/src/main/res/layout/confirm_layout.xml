@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_layout"
+    android:elevation="8dp">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin_standard"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_baseline_cancel_24"
+        />
+    <TextView
+        android:id="@+id/confirmTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/close"
+        android:text="Are you sure"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        />
+    <TextView
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/close"
+        android:layout_toEndOf="@id/confirmTv"
+        android:text="?"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        />
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/text_margin_standard"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFAE45"
+        android:text="Yes"
+        />
+</RelativeLayout>
